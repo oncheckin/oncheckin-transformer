@@ -1,0 +1,25 @@
+﻿<ui:DialogWindow x:Class="OnCheckinTransforms.VisualStudio.EnvironmentEntry"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.12.0"
+    Title="OnCheckin Web.config Transforms" Height="267" Width="385" ResizeMode="NoResize" Background="White" FocusManager.FocusedElement="{Binding ElementName=input}" WindowStartupLocation="CenterScreen">
+    <Grid Height="Auto" Width="385" VerticalAlignment="Top" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF3DAAE9">
+            <Image Source="Resources/oncheckinlogo.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Grid>
+        <Label Content="Please enter the name of your OnCheckin.com environment." VerticalAlignment="Center" Grid.Row="1" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        <TextBox TextWrapping="NoWrap"  Name="input" AcceptsReturn="True" Grid.Row="2" HorizontalAlignment="Left" Width="340" Height="30" Margin="15,0,15,0" VerticalContentAlignment="Center" KeyUp="input_KeyUp"/>
+        <Label Content="Alpha numberic characters, dashes, underlines and spaces only."  Margin="10,0,10,0" Width="350" Name="label2" VerticalAlignment="Top" Grid.Row="3" Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" HorizontalAlignment="Left" />
+        <Button Content="OK" Name="btnOk" Click="btnOk_Click" Height="30" Width="75" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Bottom" Margin="0,10,30,0" />
+    </Grid>
+</ui:DialogWindow>
