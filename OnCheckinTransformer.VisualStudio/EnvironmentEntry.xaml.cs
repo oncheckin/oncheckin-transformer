@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Forms;
 using System.Windows.Input;
-using Microsoft.VisualStudio.Shell;
 
-namespace OnCheckinTransforms.VisualStudio
+
+namespace OnCheckinTransformer.VisualStudio
 {
     /// <summary>
     /// Interaction logic for EnvironmentEntry.xaml

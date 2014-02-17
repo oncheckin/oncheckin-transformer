@@ -1,4 +1,4 @@
-﻿namespace OnCheckinTransforms.VisualStudio
+﻿namespace OnCheckinTransformer.VisualStudio
 {
     public static class Extensions
     {

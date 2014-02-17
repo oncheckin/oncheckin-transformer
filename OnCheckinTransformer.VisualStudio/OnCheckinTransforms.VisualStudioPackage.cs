@@ -10,9 +10,8 @@ using EnvDTE;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.Shell;
-using OnCheckin.OnCheckinTransforms_VisualStudio;
 
-namespace OnCheckinTransforms.VisualStudio
+namespace OnCheckinTransformer.VisualStudio
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.

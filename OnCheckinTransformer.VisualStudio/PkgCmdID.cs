@@ -2,7 +2,7 @@
 // MUST match PkgCmdID.h
 using System;
 
-namespace OnCheckin.OnCheckinTransforms_VisualStudio
+namespace OnCheckinTransformer.VisualStudio
 {
     static class PkgCmdIDList
     {

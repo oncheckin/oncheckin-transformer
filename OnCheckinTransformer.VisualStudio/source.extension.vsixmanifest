@@ -2,10 +2,11 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="6d64f304-7594-4d34-9caf-20fd8ef2a627" Version="1.0" Language="en-US" Publisher="OnCheckin" />
-    <DisplayName>OnCheckin Web.config Transforms</DisplayName>
+    <DisplayName>OnCheckin Web.config Transformer</DisplayName>
     <Description xml:space="preserve">An easy way to add environment web.config transforms to your https://oncheckin.com projects.</Description>
+    <License>license.txt</License>
     <Icon>Package.ico</Icon>
-    <Tags>web.config, transforms</Tags>
+    <Tags>web.config, transforms, web applications, oncheckin, deployment, continuous integration</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
