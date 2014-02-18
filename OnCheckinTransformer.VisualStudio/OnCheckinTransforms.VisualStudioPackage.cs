@@ -152,7 +152,7 @@ namespace OnCheckinTransformer.VisualStudio
                 // now force the storage type.
                 uint addedFileId;
                 hierarchy.ParseCanonicalName(newItemFullPath, out addedFileId);
-                buildPropertyStorage.SetItemAttribute(addedFileId, IsTransformFile, "True");
+                //buildPropertyStorage.SetItemAttribute(addedFileId, IsTransformFile, "True");
             }
         }
 
@@ -249,12 +249,12 @@ namespace OnCheckinTransformer.VisualStudio
             if (ErrorHandler.Failed(project.GetMkDocument(itemid, out itemFullPath))) return false;
 
             // make sure its not a transform file itsle
-            bool isTransformFile = IsItemTransformItem(project, itemid);
+            //bool isTransformFile = IsItemTransformItem(project, itemid);
 
             var transformFileInfo = new FileInfo(itemFullPath);
             bool isWebConfig = string.Compare("web.config", transformFileInfo.Name, StringComparison.OrdinalIgnoreCase) == 0;
 
-            return (isWebConfig && !isTransformFile && IsXmlFile(itemFullPath));
+            return (isWebConfig && IsXmlFile(itemFullPath));
         }
 
         List<string> SupportedProjectExtensions = new List<string>
