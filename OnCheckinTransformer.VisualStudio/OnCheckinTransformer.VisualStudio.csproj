@@ -172,6 +172,14 @@
     <Resource Include="Resources\Images.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Screen1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Screen2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Resource Include="Resources\oncheckinlogo.png" />
     <Content Include="Package.ico">
       <IncludeInVSIX>true</IncludeInVSIX>
