@@ -127,7 +127,6 @@ namespace OnCheckinTransformer.VisualStudio
             }
 
             var selectedProjectItem = GetProjectItemFromHierarchy(hierarchy, itemid);
-            Project project = null;
             if (selectedProjectItem != null)
             {
                 string itemFolder = Path.GetDirectoryName(itemFullPath);
